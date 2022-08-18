@@ -1,0 +1,12 @@
+import random
+numeros=[1,2,3,4,5,6,7,8,9,10] #lista
+v=random.randint(1, 10) #sorteia um numero de 1 a 10
+computador = int(input('Duvido Voce Adivinhar o Numero que Estou Pensando de 1 a 10. '))
+if computador == v: #condicao
+    print ('Parabens, Voce Conseguiu Adivinhar!')
+elif computador > 10:
+    print ('Numero Invalido!')
+else:
+    print ('Voce Perdeu!!')
+    print (f'Eu Pensei no Numero {v}')
+print ('Vamos Tentar Novamente...')
